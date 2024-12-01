@@ -41,25 +41,25 @@
 }
 .gallery {
     width:90%;
-    height:85%;
-    margin: 0px auto;
+    height:300px;
+    margin: 5px auto;
 }
 .pos {
-    display: inline-block;
-    width: 19%;
-    height: 100%;
-    margin: auto;
-    border: thin grey solid;
-    float:none;
-    vertical-align: middle;
+    height: 49%;
+    margin:0.5%;
+
 }
 .pos img {
-    display: block;
     width: 100%;
-    height: 50%;
 }
 .start {
-    width:39%;
+    width:48%;
+    height:100%;
+    display: inline-block;
+    margin: 0.5%;
+}
+.start img {
+    height: 100%;
 }
 .middle {
     margin: 5px auto;
@@ -77,7 +77,9 @@
 }
 .main img {
     margin: 5px auto;
-    width: 95%;
+    width: 25%;
+    height: 25%;
+    display: block;
 }
 .main div {
     width: 100%;
