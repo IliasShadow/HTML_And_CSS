@@ -4,54 +4,95 @@
     <title>Главная</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="Styles_Main.css">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.bundle.min.js"></script> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="menu">
-        <div class="name"><a>Главная</a></div>
-        <div class="list">
-            <div class="current"><a href="2_1.html" alt="">Олимпийские игры последних 10 лет</a></div>
-            <div><a href="2_2.html" alt="">Сочинская Олимпиада</a></div>
-            <div><a href="2_3.html" alt="">Хронология олимпийских игр</a></div>
-        </div>
+    <header> 
+    <nav class="navbar navbar-expand-md bg-light navbar-light" > 
+   
+        <a class="navbar-brand" href="2_1.html">Главная</a>   
+       
+        <button  
+          class="navbar-toggler"  
+          type="button"  
+          data-bs-toggle="collapse"  
+          data-bs-target="#menu" 
+        > 
+            <i class="fas fa-bars"></i>
+         
+        </button> 
+       
+        <div class="collapse navbar-collapse" id="menu"> 
+       
+          <ul class="navbar-nav me-auto"> 
+            <li class="nav-item"> 
+              <a class="nav-link active" href="2_1.html">Олимпийские игры последних 10 лет</a> 
+            </li> 
+            <li class="nav-item"> 
+              <a class="nav-link" href="2_2.html">Сочинская Олимпиада</a> 
+            </li> 
+            <li class="nav-item"> 
+              <a class="nav-link" href="2_3.html">Хронология олимпийских игр</a> 
+            </li> 
+          </ul>
+        </div> 
+    </nav> 
+    </header>
+    <div class="row gy-3 text-center justify-content-evenly"> 
+        <div class="col-lg-3 col-md-6 col-12 bg-image hover-zoom"> 
+            <a href="2_2.html" alt=""><img class="img-fluid img-thumbnail  w-100 h-100 hover-shadow"  src="list1.webp" alt=""> </a>
+        </div> 
+        <div class="col-lg-3 col-md-6 col-12 bg-image hover-zoom"> 
+          <img class="img-fluid img-thumbnail  w-100 h-100 hover-shadow"  src="list2.webp" alt=""> 
+        </div> 
+        <div class="col-lg-3 col-md-6 col-12 bg-image hover-zoom"> 
+          <img class="img-fluid img-thumbnail  w-100 h-100 hover-shadow"  src="list3.webp" alt=""> 
+        </div> 
+        <div class="col-lg-3 col-md-6 col-12 bg-image hover-zoom"> 
+          <img class="img-fluid img-thumbnail  w-100 h-100 hover-shadow"  src="list4.webp" alt=""> 
+        </div> 
+        </div> 
+      </div> 
     </div>
-    <div class="gallery">
-        <div><img src="list1.webp" alt=""></div>
-        <div class="even"><img src="list2.webp" alt=""></div>
-        <div><img src="list3.webp" alt=""></div>
-        <div class="even"><img src="list4.webp" alt=""></div>
-    </div>
-    <div class="main">
-        <div class="main__block">
-            <div class="img"><img src="list1.webp" alt=""></div>
-            <div class="text"><a>Зи́мние Олимпи́йские и́гры 2014</a></div><div>— международное спортивное мероприятие, проходившее в российском городе Сочи (Адлер) с 7 по 23 февраля 2014 года. </div>
+
+    <div class="row align-items-center justify-content-center m-3">
+        <div class="d-flex flex-column col-lg-3 col-md-3 col-12 align-items-center justify-content-center">
+            <div class="img1"><img class="w-100 h-100" src="list1.webp" alt=""></div>
+            <div class="text"><a class="fw-semibold">Зи́мние Олимпи́йские и́гры 2014</a>
+             — двадцать вторые зимние Олимпийские игры.</div>
         </div>
-        <div class="main__block">
-            <div class="img"><img src="list2.webp" alt=""></div>
-            <div class="text"><a>Летние Олимпийские игры 2016</a>
-                — тридцать первые летние Олимпийские игры, проходившие с 5 по 21 августа в Рио-де-Жанейро, Бразилия. Олимпийский футбольный турнир начался за два дня до церемонии открытия, раньше всех других соревнований, и был проведён также и в других городах страны — Белу-Оризонти, Бразилиа, Манаусе, Салвадоре и Сан-Паулу.
+        <div class="d-flex flex-column col-lg-3 col-md-3 col-12 align-items-center justify-content-center">
+            <div class="img1"><img  class="w-100 h-100" src="list2.webp" alt=""></div>
+            <div class="text"><a class="fw-semibold">Летние Олимпийские игры 2016</a>
+                — тридцать первые летние Олимпийские игры.
             </div>
         </div>
-        <div class="main__block">
-            <div class="img"><img src="list3.webp" alt=""></div>
-            <div class="text"><a>Зи́мние Олимпи́йские и́гры 2018</a> — международное спортивное мероприятие, которое проходило с 9 по 25 февраля 2018 года на олимпийских объектах, расположенных в уезде Пхёнчхан провинции Канвондо, Республика Корея.</div>      
+        <div class="d-flex flex-column col-lg-3 col-md-3 col-12 align-items-center justify-content-center">
+            <div class="img1"><img class="w-100 h-100" src="list3.webp" alt=""></div>
+            <div class="text"><a  class="fw-semibold">Зи́мние Олимпи́йские и́гры 2018</a> — двадцать третьи зимние Олимпийские игры.</div>      
         </div>
     </div>
-    <div class="article">
-        <div class="text"><a>Ле́тние Олимпийские и́гры 2020</a>
+    <div class="row align-items-center justify-content-center">
+        <div class="col-md-7 col-12"><a  class="fw-semibold">Ле́тние Олимпийские и́гры 2020</a>
             — тридцать вторые летние Олимпийские игры, прошедшие с 23 июля по 8 августа 2021 года в Токио, Япония. 
             <br>При этом Игры сохранили приставку «2020» в маркетинговых целях. Это были первые Олимпийские игры, перенесённые, а не отменённые в связи с чрезвычайными обстоятельствами, а также первые в истории Олимпийские игры, прошедшие в нечётный год, и первые, проведённые без зрителей на стадионах.
         </div>  
-        <div class="img"><img src="list4.webp" alt=""></div>
+        <div class="col-md-4 col-12"><img class="w-100 h-100" src="list4.webp" alt=""></div>
     </div>
-    <div class="article">
-        <div class="text number2"><a>Зи́мние Олимпи́йские и́гры 2022</a>
+    <div class="row align-items-center justify-content-center">
+        <div class="col-md-11 col-12"><a  class="fw-semibold">Зи́мние Олимпи́йские и́гры 2022</a>
             — международное спортивное мероприятие, проходившее с 4 по 20 февраля 2022 года в Пекине и Чжанцзякоу, которые совместно завоевали право на проведение Игр.
             <br>Пекин был объявлен столицей проведения Олимпиады на сессии Международного олимпийского комитета 31 июля 2015 года в Куала-Лумпуре. Он стал первым в истории городом мира, принимавшим и летние, и зимние Олимпийские игры.
         </div>   
     </div>  
-    <div class="footer">
-        <div class="name">© Пустынский И.Д., Б9122-09.03.04(5), 2024-2025</div>
-        <div class="contacts">✉ +7(914)-161-21-75</div>
+    <div class="row d-flex justify-content-between bg-info-subtle">
+        <div class="col-3">© Пустынский И.Д., Б9122-09.03.04(5), 2024-2025</div>
+        <div class="col-2">✉ +7(914)-161-21-75</div>
     </div>
 </body>
 </html>
