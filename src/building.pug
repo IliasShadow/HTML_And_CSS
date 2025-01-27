@@ -1,0 +1,7 @@
+extends template
+
+block content
+    img.img-building(src= pageData.image.src, alt=pageData.image.alt)
+    div.building
+        each paragraph in pageData.paragraphs
+            p= paragraph

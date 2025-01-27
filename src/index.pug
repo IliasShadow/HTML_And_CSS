@@ -1,0 +1,44 @@
+extends template
+
+block content
+  div.gallery
+    div.gallery__item
+      a(href= "building.html")
+        img.gallery__item-img(src= require("./images/list1.jpg"), alt="")
+    div.gallery__item.gallery__item_even
+      img.gallery__item-img(src= require("./images/list2.jpg"), alt="")
+    div.gallery__item
+      img.gallery__item-img(src= require("./images/list3.jpg"), alt="")
+    div.gallery__item.gallery__item_even
+      img.gallery__item-img(src= require("./images/list4.jpg"), alt="")
+
+  div.main
+    div.main__block
+      div.main__block-img
+        img(src= require("./images/list1.jpg"), alt="")
+      div.main__block-text
+        p Зи́мние Олимпи́йские и́гры 2014 — двадцать вторые зимние Олимпийские игры.
+    div.main__block
+      div.main__block-img
+        img(src= require("./images/list2.jpg"), alt="")
+      div.main__block-text
+        p Летние Олимпийские игры 2016 — тридцать первые летние Олимпийские игры.
+    div.main__block
+      div.main__block-img
+        img(src= require("./images/list3.jpg"), alt="")
+      div.main__block-text
+        p Зи́мние Олимпи́йские и́гры 2018 — двадцать третьи зимние Олимпийские игры.
+
+  div.article
+    div.article__text
+      a.article__link(href="#") Ле́тние Олимпийские и́гры 2020
+      p — тридцать вторые летние Олимпийские игры, прошедшие с 23 июля по 8 августа 2021 года в Токио, Япония.
+      p При этом Игры сохранили приставку «2020» в маркетинговых целях.
+    div.article__img
+      img(src= require("./images/list4.jpg"), alt="")
+
+  div.article
+    div.article__text.article__text_number2
+      a.article__link(href="#") Зи́мние Олимпи́йские и́гры 2022
+      p — международное спортивное мероприятие, проходившее с 4 по 20 февраля 2022 года в Пекине и Чжанцзякоу.
+      p Пекин стал первым в истории городом мира, принимавшим и летние, и зимние Олимпийские игры.

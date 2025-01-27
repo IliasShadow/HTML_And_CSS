@@ -1,0 +1,139 @@
+extends template
+block content
+    details
+        summary График
+        table
+            tr
+                th Значение по оси OX
+                th Результат
+            tr
+            td
+                form
+                    input(type="radio" name="OX" value="season")
+                    span Сезон
+                    br
+                    input(type="radio" name="OX" value="yers")
+                    span Год
+                    br
+                    input(type="radio" name="OX" value="country")
+                    span Страна
+            td
+                form
+                    input(type="checkbox" name="rez" value="max_r")
+                    span Максимально посещаема странами
+                    br
+                    input(type="checkbox" name="rez" value="min_r")
+                    span Минимально посещаема странами
+                    br
+                    input(type="checkbox" name="rez" value="partisipants")
+                    span Кол-во участников
+                    br
+                    input(type="checkbox" name="rez" value="sports")
+                    span Кол-во видов спорта
+        input(type="button" value="Построить")
+        p Здесь будет график
+
+    details
+        summary Фильтр
+        form
+            p
+                label Номер: 
+                    input(type="text" name="number")
+            p
+                label Сезон: 
+                    input(type="text" name="season")
+            p
+                 
+                label от 
+                    input(type="number" name="min_yers" min="1912" max="2018")
+                label до 
+                    input(type="number" name="max_yers" min="1912" max="2018")
+            p
+                label Город:
+                    input(type="text" name="city")
+            p
+                span Дата:
+                label от 
+                    input(type="date" name="min_date" min="1896-06-04" max="2018-02-25")
+                label до 
+                    input(type="date" name="max_date" min="1896-06-04" max="2018-02-25")
+            p
+                span Спортсмены: 
+                label от 
+                    input(type="number" name="min_sportsmen" min="246" max="11000")
+                label до 
+                    input(type="number" name="max_sportsmen" min="246" max="11000")
+            p
+                label Страны: от 
+                    input(type="number" name="min_countries" min="12" max="207")
+                label до 
+                    input(type="number" name="max_countries" min="12" max="207")
+            p
+                label Виды спорта: от 
+                    input(type="number" name="min_sports" min="7" max="34")
+                label до 
+                    input(type="number" name="max_sports" min="7" max="34")
+            p
+                input(type="button" value="Найти")
+
+    details
+        summary Сортировка
+        form
+            p
+                label Первый уровень: 
+                    select#first
+                        option(value="0") Нет
+                        option(value="1") №
+                        option(value="2") Cезон
+                        option(value="3") Год
+                        option(value="4") Город
+                        option(value="5") Дата начала
+                        option(value="6") Дата окончания
+                        option(value="7") Страны
+                        option(value="8") Виды спорта
+                label по убыванию? 
+                    input(type="checkbox" name="first_level_min" value="yes")
+            p
+                label Второй уровень: 
+                    select#second
+                        option(value="0") Нет
+                        option(value="1") №
+                        option(value="2") Cезон
+                        option(value="3") Год
+                        option(value="4") Город
+                        option(value="5") Дата начала
+                        option(value="6") Дата окончания
+                        option(value="7") Страны
+                        option(value="8") Виды спорта
+                label по убыванию? 
+                    input(type="checkbox" name="second_level_min" value="yes")
+            p
+                label Третий уровень: 
+                    select#third
+                        option(value="0") Нет
+                        option(value="1") №
+                        option(value="2") Cезон
+                        option(value="3") Год
+                        option(value="4") Город
+                        option(value="5") Дата начала
+                        option(value="6") Дата окончания
+                        option(value="7") Страны
+                        option(value="8") Виды спорта
+                label по убыванию? 
+                    input(type="checkbox" name="third_level_min" value="yes")
+        p
+            input(type="button" value="Сортировать")
+
+    table
+        thead
+            th №
+            th Сезон
+            th Год
+            th Город
+            th Дата начала
+            th Дата окончания
+            th Спортсмены
+            th Страны
+            th Виды спорта
+        tbody
+            +table()

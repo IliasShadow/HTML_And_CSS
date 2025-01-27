@@ -1,0 +1,27 @@
+﻿mixin table()
+    each olympic in olympics
+        tr
+            td= olympic.number
+            td= olympic.season
+            td= olympic.year
+            td= olympic.city
+            td= olympic.startDate
+            td= olympic.endDate
+            td= olympic.athletes
+            td= olympic.countries
+            td= olympic.sports
+mixin header()
+    header.menu
+        div.menu__name
+            a.menu__link(href="#") Главная
+        div.menu__list
+            div.menu__list-item.menu__list-item_current
+                a.menu__link(href="index.html") Олимпийские игры последних 10 лет
+            div.menu__list-item
+                a.menu__link(href="building.html") Сочинская Олимпиада
+            div.menu__list-item
+                a.menu__link(href="table.html") Хронология олимпийских игр
+mixin footer()
+    footer.footer
+        div.footer__name © Пустынский И.Д., Б9122-09.03.04(5), 2024-2025
+        div.footer__contacts ✉ +7(914)-161-21-75
